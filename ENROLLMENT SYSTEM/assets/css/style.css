@@ -1,0 +1,309 @@
+/* Custom styles for Enrollment System */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #f8f9fa;
+    --dark-text: #2c3e50;
+    --light-text: #7f8c8d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: var(--dark-text);
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 8px 8px 0 0 !important;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eef2f7;
+    padding: 15px 20px;
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-select {
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+}
+
+.form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: var(--dark-text);
+    border-top: none;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.signature-img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.alert {
+    border-radius: 8px;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.prerequisite-completed {
+    color: var(--success-color);
+    font-weight: 600;
+}
+
+.prerequisite-pending {
+    color: var(--danger-color);
+    font-weight: 600;
+}
+
+.faculty-student-image {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border: 2px solid #e1e8ed;
+    border-radius: 50%;
+}
+
+.faculty-signature-image {
+    max-width: 120px;
+    max-height: 50px;
+    object-fit: contain;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 2px;
+}
+
+.grade-submitted {
+    font-weight: 600;
+}
+
+.grade-excellent {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.grade-good {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.grade-fair {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.grade-poor {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* GPA Grade Ranges */
+.gpa-a {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.gpa-b {
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.gpa-c {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.gpa-d {
+    color: #fd7e14;
+    font-weight: bold;
+}
+
+.gpa-f {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #eef2f7;
+    text-align: center;
+    color: var(--light-text);
+    background-color: #ffffff;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.modal-content {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-radius: 8px 8px 0 0 !important;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eef2f7;
+}
+
+.modal-footer {
+    border-radius: 0 0 8px 8px !important;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eef2f7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .faculty-student-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .faculty-signature-image {
+        max-width: 80px;
+        max-height: 40px;
+    }
+}

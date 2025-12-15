@@ -238,7 +238,9 @@
         "citizenship","height","weight","religion","spouse",
         "spouse_Occup","father_Occup","mother_Occup"
       ];
-      var filter = /^[a-zA-Z0-9\s.,'-]+$/;
+      var textFilter = /^[a-zA-Z0-9\s.,'-]+$/;
+      var emailFilter = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var phoneFilter = /^[0-9\s\-()+]+$/;
 
       for (let i = 0; i < requiredFields.length; i++) {
         let field = document.getElementById(requiredFields[i]);
@@ -247,9 +249,15 @@
           field.focus();
           return false; 
         }
+      //   if (field.id === "email" && !emailFilter.test(field.value)) {
+      //   alert("Please enter a valid email address.");
+      //   field.focus();
+      //   return false;
+      // }
+    }
       }
       return true; 
-    }
+    
   </script>
 </body>
 </html>
