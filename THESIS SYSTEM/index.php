@@ -38,7 +38,7 @@ if (Auth::check()) {
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #6d738fff 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -111,7 +111,7 @@ if (Auth::check()) {
         .cta-button {
             display: inline-block;
             background: white;
-            color: #667eea;
+            color: #764ba2;
             padding: 15px 40px;
             border-radius: 50px;
             text-decoration: none;
